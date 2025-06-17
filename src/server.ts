@@ -7,7 +7,7 @@ mongoose
   .then(() => {
     console.log('✅ Connected to MongoDB');
     app.listen(config.port, () =>
-      console.log(`🚀 Server running at http://localhost:${config.port}`)
+      console.log(`🚀 Server running at http://${config.host}:${config.port}`)
     );
   })
   .catch(err => {
