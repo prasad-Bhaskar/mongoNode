@@ -1,10 +1,10 @@
 import express from 'express';
 import { register, login, forgotPassword } from '../controllers/auth.controller';
-import { validateRegister } from '../middlewares/auth.middleware';
+import {} from '../middlewares/auth.middleware';
 
 const router = express.Router();
 
-router.post('/register', validateRegister, register);
+router.post('/register', register);
 router.post('/login', login);
 router.post('/forgot-password', forgotPassword);
 
